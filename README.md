@@ -1,4 +1,4 @@
-A set of Jekyll helpers written in bash.
+A set of Jekyll (https://github.com/jekyll/jekyll) helpers written in bash.
 
 What does this do?
 ===========
