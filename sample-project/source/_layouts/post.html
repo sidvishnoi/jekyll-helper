@@ -1,0 +1,31 @@
+{% include header.html %}
+
+</head>
+<body>
+
+{% include navigation.html %}
+
+
+
+<main>
+<p>## a post page page</p>
+<div class="post">
+ 	<h1 class="post-title"><a href="{{ page.url}}">{{ page.title }}</a></h1>
+	<div class="post-body">
+		{{content}}
+	</div>
+	<div class="post-footer">
+		<div class="pagination">
+			{% if page.next %}
+			<span class="prev" rel="prev"><a title="Previous page" href="{{ page.next.url }}" class="previous">&#10094; {{ page.next.title }}</a></span> {% else %}
+			{% endif %}
+			{% if page.previous %}
+			<span class="next" rel="next"><a title="Next page" href="{{ page.previous.url }}" class="next">{{ page.previous.title }} &#10095;</a></span> 
+			{% else %}
+			{% endif %}
+		</div>
+	</div>
+</div>
+</main>
+
+{% include footer.html %}

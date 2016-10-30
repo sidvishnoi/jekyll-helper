@@ -1,0 +1,37 @@
+=======================================================================
+Jekyll Helper Script
+=======================================================================
+
+\e[1mSYNOPSIS: \e[0m
+	\e[1m./generator.sh\e[0m [-h|--help] [-n|--new location] [-f|--fresh] [-c|--cat category path] [-p|--post path] [-s|--static] [-m|--main] [-a|--all] [-l|--local port] [-d|--deploy]
+
+\e[1mDESCRIPTION:\e[0m
+	\e[1m-h, --help\e[0m
+		Display this help message and exit.
+	\e[1m-n, --new [location]\e[0m
+		create a new file along with a folder if required
+		Where 'location' is the enter location where to create file.
+	\e[1m-f, --fresh\e[0m
+		clear the public folder
+	\e[1m-c, --cat [path]\e[0m
+		build a category
+		Where 'path' is the path of category.
+	\e[1m-p, --post [path]\e[0m
+		build a specific post
+		Where 'path' is the path of post, relative to content dir.
+	\e[1m-s, --static\e[0m
+		build static files
+	\e[1m-m, --main\e[0m
+		build main home page
+	\e[1m-a, --all\e[0m
+		build all
+	\e[1m-l, --local\e[0m
+		serve to local host
+	\e[1m-d, --deploy\e[0m
+		deploy the public folder
+
+\e[1mEXAMPLE USAGE:\e[0m
+	\e[1m./generator.sh -f -a -l\e[0m
+	clears public folder, generates site completely 
+	and serves on localhost port :4000 
+

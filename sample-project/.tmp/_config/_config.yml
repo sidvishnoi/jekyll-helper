@@ -1,0 +1,36 @@
+# config file for category generations
+
+name: "site name"
+author: "name of author"
+title: 'site title'
+description: "website description"
+url: "http://example.com"
+  
+theme: minima
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  hard_wrap: false
+
+paginate: 3
+paginate_path: 'page/:num'
+
+feed: 
+  path: '/feed.xml' # do not delete this, it is used in pagination also
+
+safe: false
+
+sass:
+  sass_dir: assets/css
+
+emptyArray: []
+
+gems:
+  - kramdown
+  - jekyll-paginate
+
+exclude: ['assets', 'feed.xslt.xml', 'favicon.ico', 'Gemfile', 'Gemfile.lock', 'robots.txt', '_temp.yml', 'generator.sh']

@@ -1,0 +1,29 @@
+# config file for specific post generation,when no dependency on other posts
+
+name: "site name"
+author: "name of author"
+title: 'site title'
+description: "website description"
+url: "http://example.com"
+
+theme: minima
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  hard_wrap: false
+
+safe: false
+
+sass:
+  sass_dir: assets/css
+
+emptyArray: []
+
+gems:
+  - kramdown
+
+exclude: ['assets', 'feed.xslt.xml', 'feed.xml', 'sitemap.xml', 'index.html', favicon.ico', 'Gemfile', 'Gemfile.lock', 'robots.txt', 'generator.sh']

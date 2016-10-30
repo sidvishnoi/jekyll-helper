@@ -1,0 +1,33 @@
+# config file for home page generation
+
+name: "site name"
+author: "name of author"
+title: 'site title'
+description: "website description"
+url: "http://example.com"
+
+theme: minima
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  hard_wrap: false
+
+feed: 
+  path: '/feed.xml'
+
+safe: false
+
+sass:
+  sass_dir: assets/css
+
+emptyArray: []
+
+gems:
+  - kramdown
+  # - jekyll-paginate - pagination becomes useless on home if all posts are generated
+
+exclude: ['assets', 'feed.xslt.xml', 'feed.xml', 'sitemap.xml', 'favicon.ico', 'Gemfile', 'Gemfile.lock', 'robots.txt', 'generator.sh']

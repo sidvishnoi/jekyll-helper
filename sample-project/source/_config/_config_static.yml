@@ -1,0 +1,33 @@
+# config file for static content genearion, inlcudes some pages also like contact, about
+
+name: "site name"
+author: "name of author"
+title: 'site title'
+description: "website description"
+url: "http://example.com"
+
+theme: minima
+
+# Build settings
+permalink: pretty
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+  input: GFM
+  hard_wrap: false
+
+feed: 
+  path: '/feed.xml'
+
+safe: false
+
+sass:
+  sass_dir: assets/css/
+
+emptyArray: []
+
+gems:
+  - kramdown
+
+exclude: ['feed.xml', 'sitemap.xml', 'Gemfile', 'Gemfile.lock', 'generator.sh', '_posts', 'pages']
+inlcude: ['assets/']
