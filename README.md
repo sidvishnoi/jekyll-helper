@@ -13,14 +13,14 @@ Setting Up
 =========
 Set up a new project as given in the `sample-project` with following hierarchy:
 ```
-    - project
-	    -- content
-		    // your articles and pages, divided in their respective categories
-	    -- source
-		    // website source code and configuration
-		    // _plugins _data _layouts _includes _config _jekyll-helper...
-	    -- public
-		    // your generated ready to host website
+- project
+    -- content
+	    // your articles and pages, divided in their respective categories
+    -- source
+	    // website source code and configuration
+	    // _plugins _data _layouts _includes _config _jekyll-helper...
+    -- public
+	    // your generated ready to host website
 ```
 In `_jekyll-helper/generator.sh`, edit the following variables:
 
@@ -77,8 +77,11 @@ Options
 Notes
 ===
 This is just a sample script, made to share the ideas how to make the builds efficient. You can create your own, or contribute to make this one better.
+
 This is currently being used on my blog (http://www.hoopsvilla.com).
+
 Tested on Ubuntu 14.04 and 16.04.
+
 Random text for aricles genereated by https://jaspervdj.be/lorem-markdownum/
 
 **Warning:** Use and Edit with caution. Contains `rm -rf` commands.
