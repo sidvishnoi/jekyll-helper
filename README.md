@@ -1,5 +1,7 @@
 A set of Jekyll (https://github.com/jekyll/jekyll) helpers written in bash.
 
+> Use this better one now instead: (https://github.com/sidvishnoi/jekyll_helper)
+
 What does this do?
 ===========
 
